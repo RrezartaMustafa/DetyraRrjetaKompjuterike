@@ -249,77 +249,7 @@ def Keno():
                 print('Pergjigja u dergua :) :)')
               except:
                   print('Foni keno ka ndaluar')
-def Perfectnumber():
-               try:  
-                print('Kemi marrur kerkesen per te derguar Perfect Number\n')
-                primeNumber=int(b)
-                rezultati=(math.pow(2,primeNumber)-1)*math.pow(2,primeNumber-1)
-                dergesa=str(rezultati)
-                Konektimi.send(dergesa.encode('utf-8'))
-                print('Pergjigja u dergua :) :)')
-               except:
-                  print('Foni Perfect ka ndaluar')
-def Qyteti():
-               try:  
-                   print('Kemi marrur kerkesen per te derguar Siperfaqet e qyteteve te Kosoves\n')
-                   pergj=str(b)
-                   vendi='Nuk kemi gjetur vendin tuaj'
-                   if(pergj=='PRISHTINE' or pergj=='prishtine'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 572 km2 dhe 210376 banore'
-                   if(pergj=='PRIZEREN' or pergj=='prizeren'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 284 km2 dhe 186375 banore'
-                   if(pergj=='GJILAN' or pergj=='gjilan'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 663 km2 dhe 93450 banore' 
-                   if(pergj=='GJAKOVE' or pergj=='gjakove'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 587 km2 dhe 98476 banore' 
-                   if(pergj=='FERIZAJ' or pergj=='ferizaj'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 345 km2 dhe 114167 banore' 
-                   if(pergj=='PEJE' or pergj=='peje'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 603 km2 dhe 99921 banore' 
-                   if(pergj=='MITROVICE' or pergj=='mitrovice'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 350 km2 dhe 75502 banore' 
-                   if(pergj=='PODUJEVE' or pergj=='podujeve'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 633 km2 dhe 94864 banore' 
-                   if(pergj=='VUSHTRRI' or pergj=='vushtrri'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 344 km2 dhe 73207 banore' 
-                   if(pergj=='SUHAREKE' or pergj=='suhareke'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 306 km2 dhe 63228 banore' 
-                   if(pergj=='RAHOVEC' or pergj=='rahovec'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 276 km2 dhe 59308 banore' 
-                   if(pergj=='DRENAS' or pergj=='drenas'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 290 km2 dhe 61801 banore' 
-                   if(pergj=='LIPJAN' or pergj=='lipjan'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 422 km2 dhe 60859 banore' 
-                   if(pergj=='MALISHEVE' or pergj=='malisheve'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 361 km2 dhe 62738 banore' 
-                   if(pergj=='KAMENICE' or pergj=='kamenice'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 423 km2 dhe 36155 banore' 
-                   if(pergj=='VITI' or pergj=='viti'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 278 km2 dhe 49085 banore' 
-                   if(pergj=='DECAN' or pergj=='decan'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 180 km2 dhe 41564 banore' 
-                   if(pergj=='ISTOG' or pergj=='istog'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 454 km2 dhe 40833 banore' 
-                   if(pergj=='KLINE' or pergj=='kline'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 308 km2 dhe 40797 banore' 
-                   if(pergj=='SKENDERAJ' or pergj=='skenderaj'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 378 km2 dhe 53496 banore' 
-                   if(pergj=='DRAGASH' or pergj=='dragash'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 435 km2 dhe 35258 banore' 
-                   if(pergj=='FUSHE-KOSOVE' or pergj=='fushe-kosove'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 83 km2 dhe 37414 banore' 
-                   if(pergj=='OBILIQ' or pergj=='obiliq'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 105 km2 dhe 22665 banore' 
-                   if(pergj=='SHTIME' or pergj=='shtime'):
-                        vendi='Qyteti juaj'+pergj+'ka siperfaqe prej 134 km2 dhe 28380 banore' 
-                  
-                   Konektimi.send(vendi.encode('utf-8'))
-                   print('Pergjigja u dergua :) :)')
 
-      
-               except:
-                   print('Foni Perfect ka ndaluar')
-                   perfundo()
 def ditelindja():
                dita=0
                try:
