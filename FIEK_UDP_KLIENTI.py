@@ -102,6 +102,65 @@ def Port():
               print(mesazhipranuar.decode('utf-8'))   
       except:
               print('Gabime me klientserverin')
+def Rrezja():
+      try:
+         print('Jeni ne pjesen e bere nga Rrezarta Mustafa\n  Per metoden PerfectNumber shtyp 1\n, Per metoden Qytetet shtyp 2\n')
+         pergjigja=input('Metoda:')
+         if(pergjigja=='1'):
+             Numratperfect()
+         if(pergjigja=='2'):
+             Qytetet()
+      except:
+         print('Numri i dhene nuk eshte metode ose kemi problem me klientnserverin ')
+         perfundo()
+def Numratperfect():
+      try:
+       Lista=["2","3","5","7","11","13","17","19","23","29","31","37","41","53","59","61","67","71","73","79","83","89","97"]
+       print('Shkruani nje numer te thjeshte nga lista me poshte:')
+       print(Lista)
+       Input=input('Numri:')
+       for i in Lista:
+         if(i==Input):
+             Dergesa='PERFECTNUMBER'+' '+str(Input)
+             klientisocket.sendto(Dergesa.encode('utf-8'),(Hosti,Porti))
+             mesazhipranuar,serveradresa=klientisocket.recvfrom(1024)
+             print(mesazhipranuar.decode('utf-8'))
+             inputRina=input('shtypni P nese doni te vazhdoni tek metodat e Rrezartes , shtypni J nese doni tjera')
+             if(inputRina=='P'):
+              cls()
+              Rrezja()
+             else:
+              perfundo()
+         else:
+             continue
+      except:
+            print('Gabime me fonin ose numri dhene nuk eshte ne liste ose kemi probleme me klientserverin')
+            perfundo()
+def Qytetet():
+      try:
+              edhenaMarrur=input('Shtypni qytetin prej nga vini:\n'
+			      'Prishtine, Prizren, Gjilan, Gjakove, Ferizaj\n'
+			      'Peje, Mitrovice, Podujeve, Vushtrri, Suhareke\n'
+			      'Rahovec, Drenas, Lipjan, Malisheve, Kamenice\n'
+			      'Viti, Decan, Istog, Kline, Skenderaj, Dragash\n'
+			      'Fushe-Kosove,Obiliq,Shtime  ne formatin: QYTETI emri\n')
+              qyteti,emri=edhenaMarrur.split(' ')
+              if(qyteti=='QYTETI'):
+                  klientisocket.sendto(edhenaMarrur.encode('utf-8'),(Hosti,Porti))
+                  mesazhipranuar,serveradresa=klientisocket.recvfrom(1024)
+                  print(mesazhipranuar.decode('utf-8'))
+                  inputRina=input('shtypni P nese doni te vazhdoni tek metodat e Rrezartes , shtypni J nese doni tjera')
+                  if(inputRina=='P'):
+                   cls()
+                   Rrezja()
+                  else:
+                   perfundo()
+              else:
+                  print('Formati gabim!!')
+                  perfundo()
+      except:
+              print('Gabime me metoden ose klientserverin')
+              perfundo()            
              
 #Ketu fillojne f-onet e Rines:
 def Rina():
